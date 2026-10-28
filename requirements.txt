@@ -1,0 +1,5 @@
+PySide6>=6.5          # or: PyQt6>=6.5  (either one works)
+psutil>=5.9           # optional: sweats at high CPU, droops at low battery
+pynput>=1.7           # optional: gets excited when you type fast
+pillow>=10            # optional: only for export_sprites.py
+pyobjc-framework-Quartz>=10 ; sys_platform == "darwin"   # optional: walk on windows (macOS)
