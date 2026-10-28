@@ -517,7 +517,7 @@ class CorgiPet(QtWidgets.QWidget):
         if abs(dx) < 14 or self.state_t > self.state_dur:
             self.facing = 1 if dx >= 0 else -1
             if cur.y() < self.y + self.height() * 0.3:
-                self.say(pick(["Jump! I can't reach!", "Come down here!",
+                self.say(pick(["I can't reach!", "Come down here!",
                                "*boing boing*"]), 2.5)
                 self.enter("excited", 2.5)
             else:
@@ -839,7 +839,7 @@ class CorgiPet(QtWidgets.QWidget):
     def play(self):
         if self.state == "sleep":
             self.wake()
-        self.say("Catch me if you can! Move your mouse! 🎾", 3)
+        self.say("I am going to catch you! Move your mouse! 🎾", 3)
         if self._ground_state():
             self.enter("chase", 10)
 
